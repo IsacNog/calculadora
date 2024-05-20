@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="container__titulo">IsacNog</h1>
+
+        <div class="calculadora">
+            <h1 class="calculadora__titulo">Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="btn" id="C">C</button></td>
+                    <td><button class="btn" id="<" onclick="back()">⭠</button></td>
+                    <td><button class="btn" id="/" onclick="digitaNum('/')">/</button></td>
+                    <td><button class="btn" id="x" onclick="digitaNum('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" id="7" onclick="digitaNum('7')">7</button></td>
+                    <td><button class="btn" id="8" onclick="digitaNum('8')">8</button></td>
+                    <td><button class="btn" id="9" onclick="digitaNum('9')">9</button></td>
+                    <td><button class="btn" id="-" onclick="digitaNum('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" id="4" onclick="digitaNum('4')">4</button></td>
+                    <td><button class="btn" id="5" onclick="digitaNum('5')">5</button></td>
+                    <td><button class="btn" id="6" onclick="digitaNum('6')">6</button></td>
+                    <td><button class="btn" id="+" onclick="digitaNum('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" id="1" onclick="digitaNum('1')">1</button></td>
+                    <td><button class="btn" id="2" onclick="digitaNum('2')">2</button></td>
+                    <td><button class="btn" id="3" onclick="digitaNum('3')">3</button></td>
+                    <td rowspan="2"><button style="height: 106px;" class="btn" id="=">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button style="width: 106px;" class="btn" id="0" onclick="digitaNum('0')">0</button></td>
+                    <td><button class="btn" id="." onclick="digitaNum('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
